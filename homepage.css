@@ -1,0 +1,584 @@
+body {
+    background-color: lightgrey;
+    margin: 0;
+    padding: 0;
+}
+
+#mainContent {
+    margin: 0;
+    padding: 0;
+    float: top;
+}
+
+
+
+.searchBar {
+    padding-left: 37.5vw;
+    padding-top: 1vw;
+    padding-right: 3vw;
+}
+
+.searchBar input[type=text] {
+    padding: 1vw;
+    font-size: 30px;
+}
+
+.searchBar a {
+    background-color: olive;
+    text-decoration: none;
+    font-family: Verdana, sans-serif;
+    font-size: 30px;
+    color: whitesmoke;
+    padding: 1vw;
+}
+
+.searchBar a:hover {
+    background-color: firebrick;
+}
+
+.display {
+    display: block;
+    background-color: lightgrey;
+    height: auto;
+    width: 100%;
+    padding: 0;
+    }
+
+#main {
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+#main ul{
+    list-style-type: none;
+    margin: 0;
+    padding-left: 10%;
+    overflow: hidden;
+    background-color: lightgrey;
+}
+
+#main ul li {
+    float: left;
+    width: 30%;
+    height: 20%;
+}
+
+#main ul li img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+
+.himContainer {
+    position: relative;
+    text-align: center;
+    color: white;
+    font-size: 2.6vw;
+    font-weight: normal;
+    width: auto;
+    transition: transform .2s;
+}
+
+.himContainer:hover {
+    transform: scale(1.2);
+}
+
+.himContainer:hover img {
+    filter: grayscale(100%);
+
+}
+
+.himContainer:hover .Tag {
+    background-color: firebrick;
+}
+
+.himContainer img {
+    filter: grayscale(0%);
+
+}
+
+.Tag {
+    position: absolute;
+    font-family: Verdana, sans-serif;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    background-color: olive;
+}
+
+
+
+.productsContainer {
+    position: relative;
+    text-align: center;
+    color: white;
+    font-size: 2.6vw;
+    font-weight: normal;
+    width: auto;
+    transition: transform .2s;
+}
+
+.productsContainer:hover {
+    transform: scale(1.2);
+}
+
+.productsContainer:hover img {
+    filter: grayscale(100%);
+}
+
+.productsContainer:hover .Tag {
+    background-color: firebrick;
+}
+
+.productsContainer img {
+    filter: grayscale(0%);
+}
+
+#sale-link {
+    display: none;
+}
+
+
+.aboutContainer {
+    position: relative;
+    text-align: center;
+    color: white;
+    font-size: 2.6vw;
+    font-weight: normal;
+    width: auto;
+    transition: transform .2s;
+}
+
+.aboutContainer:hover {
+    transform: scale(1.2);
+}
+
+.aboutContainer:hover img {
+    filter: grayscale(100%);
+}
+
+.aboutContainer:hover .Tag {
+    background-color: firebrick;
+}
+
+.aboutContainer img {
+    filter: grayscale(0%);
+}
+
+.description {
+    float: bottom;
+    background-color: lightgrey;
+    padding-left: 9vw;
+    padding-right: 7vw;
+}
+
+.description p {
+    background-color: olive;
+    font-family: Verdana, sans-serif;
+    font-size: 30px;
+    color: whitesmoke;
+    padding: 1vw;
+    border-width: 0.2vw;
+    border-color: firebrick;
+    border-style: solid;
+
+}
+
+#featured p {
+    background-color: olive;
+    font-family: Verdana, sans-serif;
+    font-weight: normal;
+    font-size: 4vw;
+    text-align: center;
+    color: white;
+    padding: 0;
+    margin: 0;
+}
+
+.featuredProducts {
+    display: block;
+    width: auto;
+}
+
+
+.featuredProducts ul {
+    list-style-type: none;
+    margin: 1vw;
+    overflow: hidden;
+    background-color: lightgrey;
+    padding-left: 5.8vw;
+
+}
+
+.featuredProducts li {
+    float: left;
+    background-color: olive;
+    width: 28vw;
+    height: 25vw;
+    margin: 0.5vw 0.5vw 0.5vw 0.5vw;
+    position: relative;
+
+}
+
+.item:hover .priceTag{
+    border-style: solid;
+    border-width: 0.1vw;
+    border-color: firebrick;
+    background-color:  firebrick;
+}
+
+
+li:hover {
+    background-color: firebrick;
+}
+
+.featuredProducts li img {
+    width: 100%;
+    height: 30%;
+
+}
+
+.itemDesc {
+    margin: 0.8vw;
+    font-family: Verdana, sans-serif;
+    font-size: 22px;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+
+
+}
+
+.priceTag {
+    position: absolute;
+    font-family: Verdana, sans-serif;
+    top: 5%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+    width: 20%;
+    background-color: olive;
+    color: white;
+    font-weight: normal;
+    font-size: 40px;
+    text-align: center;
+    border-color: whitesmoke;
+    border-style: solid;
+    border-width: 0.1vw;
+    border-radius: 2vw;
+}
+
+.sale_tag {
+    display: none;
+    position: absolute;
+    font-family: Verdana, sans-serif;
+    top: 15%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+    width: 20%;
+    background-color: yellowgreen;
+    color: white;
+    font-weight: normal;
+    font-size: 40px;
+    text-align: center;
+    border-color: whitesmoke;
+    border-style: solid;
+    border-width: 0.1vw;
+    border-radius: 2vw;
+}
+
+.item:hover .sale_tag{
+    border-style: solid;
+    border-width: 0.1vw;
+    border-color: firebrick;
+    background-color:  firebrick;
+}
+
+.on_sale_tag {
+    display: none;
+    position: absolute;
+    font-family: Verdana, sans-serif;
+    top: 5.5%;
+    left: 79%;
+    transform: translate(-50%, -50%);
+    width: 40%;
+    background-color: firebrick;
+    color: white;
+    font-weight: normal;
+    font-size: 40px;
+    text-align: center;
+    border-color: firebrick;
+    border-style: solid;
+    border-width: 0.1vw;
+    border-radius: 0.5vw;
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        background-color: whitesmoke;
+        margin: 0;
+        padding: 0;
+    }
+
+    #mainContent {
+        margin: 0;
+        padding: 0;
+        float: top;
+    }
+
+    .searchBar {
+        padding-left: 41vw;
+        padding-top: 0vw;
+        margin: 0;
+    }
+
+    .searchBar input[type=text] {
+        padding: 1vw;
+        font-size: 3vw;
+        margin: 0;
+    }
+
+    .searchBar a {
+        background-color: olive;
+        text-decoration: none;
+        font-family: Verdana, sans-serif;
+        font-size: 3vw;
+        color: whitesmoke;
+        padding: 2vw;
+        margin: 0;
+    }
+
+    .searchBar a:hover {
+        background-color: firebrick;
+    }
+
+    .display {
+        display: block;
+        background-color: whitesmoke;
+        height: auto;
+        width: 100%;
+        padding: 0;
+    }
+
+    #main {
+        padding-top: 1%;
+        padding-bottom: 1%;
+    }
+    #main ul{
+        list-style-type: none;
+        margin: 0;
+        padding-left: 10%;
+        overflow: hidden;
+        background-color: whitesmoke;
+    }
+
+    #main ul li {
+        float: left;
+        width: 30%;
+        height: 20%;
+    }
+
+    #main ul li img {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+
+
+    .himContainer {
+        position: relative;
+        text-align: center;
+        color: white;
+        font-size: 3vw;
+        font-weight: normal;
+        width: auto;
+        transition: transform .2s;
+    }
+
+    .himContainer:hover {
+        transform: scale(1.2);
+    }
+
+    .himContainer:hover img {
+        filter: grayscale(100%);
+
+    }
+
+    .himContainer:hover .Tag {
+        background-color: firebrick;
+    }
+
+    .himContainer img {
+        filter: grayscale(0%);
+
+    }
+
+    .Tag {
+        position: absolute;
+        font-family: Verdana, sans-serif;
+        top: 85%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        background-color: olive;
+    }
+
+
+    .productsContainer {
+        position: relative;
+        text-align: center;
+        color: white;
+        font-size: 2.5vw;
+        font-weight: normal;
+        width: auto;
+        transition: transform .2s;
+    }
+
+    .productsContainer:hover {
+        transform: scale(1.2);
+    }
+
+    .productsContainer:hover img {
+        filter: grayscale(100%);
+    }
+
+    .productsContainer:hover .Tag {
+        background-color: firebrick;
+    }
+
+    .productsContainer img {
+        filter: grayscale(0%);
+    }
+
+
+    .aboutContainer {
+        position: relative;
+        text-align: center;
+        color: white;
+        font-size: 3vw;
+        font-weight: normal;
+        width: auto;
+        transition: transform .2s;
+    }
+
+    .aboutContainer:hover {
+        transform: scale(1.2);
+    }
+
+    .aboutContainer:hover img {
+        filter: grayscale(100%);
+    }
+
+    .aboutContainer:hover .Tag {
+        background-color: firebrick;
+    }
+
+    .aboutContainer img {
+        filter: grayscale(0%);
+    }
+
+    .description {
+        float: bottom;
+        background-color: whitesmoke;
+        padding-left: 9vw;
+        padding-right: 7vw;
+    }
+
+    .description p {
+        background-color: olive;
+        font-family: Verdana, sans-serif;
+        font-size: 9px;
+        color: whitesmoke;
+        padding: 1vw;
+        border-width: 0.2vw;
+        border-color: firebrick;
+        border-style: solid;
+
+    }
+
+    #featured p {
+        background-color: olive;
+        font-family: Verdana, sans-serif;
+        font-weight: normal;
+        font-size: 9vw;
+        text-align: center;
+        color: white;
+        padding: 0;
+        margin: 0;
+    }
+
+    .featuredProducts {
+        display: block;
+        width: auto;
+    }
+
+
+    .featuredProducts ul {
+        list-style-type: none;
+        margin: 1vw;
+        overflow: hidden;
+        background-color: whitesmoke;
+        padding-left: 5.8vw;
+
+    }
+
+    .featuredProducts li {
+        background-color: olive;
+        width: 60vw;
+        height: 55vw;
+        margin: 1vw 5vw 0.1vw 15vw;
+        position: relative;
+
+    }
+
+    .item:hover .priceTag{
+        border-style: solid;
+        border-width: 0.1vw;
+        border-color: firebrick;
+        background-color:  firebrick;
+    }
+
+
+    li:hover {
+        background-color: firebrick;
+    }
+
+    .featuredProducts li img {
+        width: 100%;
+        height: 30%;
+
+    }
+
+    .itemDesc {
+        margin: 0.1vw;
+        font-family: Verdana, sans-serif;
+        font-size: 3vw;
+        text-align: center;
+        font-weight: bold;
+        color: white;
+
+
+    }
+
+    .priceTag {
+        position: absolute;
+        font-family: Verdana, sans-serif;
+        top: 5%;
+        left: 10%;
+        transform: translate(-50%, -50%);
+        width: 20%;
+        background-color: olive;
+        color: white;
+        font-weight: normal;
+        font-size: 5vw;
+        text-align: center;
+        border-color: whitesmoke;
+        border-style: solid;
+        border-width: 0.1vw;
+        border-radius: 2vw;
+    }
+}
+
+
+
+

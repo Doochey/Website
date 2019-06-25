@@ -1,0 +1,240 @@
+body {
+    background-color: lightgrey;
+    margin: 0;
+}
+
+.mainContent {
+    height: 105vw
+}
+
+
+.sidebar_container {
+    float: left;
+    padding: 0;
+    width: 15vw;
+    height: 25vw;
+    background-color: olive;
+    margin: 7vw 0 0;
+    border-color: firebrick;
+    border-width: 0.2vw;
+    border-style: solid;
+    position: sticky;
+    top: 0;
+
+}
+.sidebar {
+    float: left;
+    color: white;
+}
+
+.sidebar h1 {
+    font-family: Verdana, sans-serif;
+    font-size: 30px;
+    margin: 1vw;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    font-family: Verdana, sans-serif;
+
+}
+
+.sidebar li {
+    margin: 0.3vw;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+
+}
+.display {
+    float: left;
+    margin: 0;
+    padding: 0;
+    background-color: lightgrey;
+    width: 80vw;
+    height: 39.9vw;
+}
+
+.top_bar {
+    float: left;
+    background-color: lightgrey;
+    margin: 4vw 0 0 4vw;
+}
+
+.searchBar {
+    float: left;
+    padding-top: 1vw;
+}
+
+.searchBar input[type=text] {
+    padding: 1vw;
+    font-size: 20px;
+}
+
+.searchBar a {
+    background-color: olive;
+    text-decoration: none;
+    font-family: Verdana, sans-serif;
+    font-size: 22px;
+    color: whitesmoke;
+    padding: 1vw;
+}
+
+.sort_by {
+    float: left;
+    font-size: 20px;
+}
+
+.sort_by select {
+    float: left;
+    font-size: 20px;
+    font-family: Verdana, sans-serif;
+    margin: 2vw;
+}
+
+.products_description {
+    float: left;
+    background-color: olive;
+    margin: 1vw 4vw 4vw;
+    border-width: 0.2vw;
+    border-style: solid;
+    border-color: firebrick;
+}
+
+.products_description p {
+    margin: 1vw;
+    color: white;
+    font-size: 25px;
+    font-family: Verdana, sans-serif;
+}
+
+.products {
+    display: block;
+    width: 80vw;
+    height: 75vw;
+    background-color: lightgrey;
+    margin-top: 18vw;
+    overflow: auto;
+}
+
+
+.products ul {
+    list-style-type: none;
+    margin: 1vw;
+    background-color: lightgrey;
+    padding-left: 5.8vw;
+
+}
+
+.products li {
+    float: left;
+    background-color: olive;
+    width: 28vw;
+    height: 25vw;
+    margin: 0.5vw 0.5vw 0.5vw 0.5vw;
+    position: relative;
+
+}
+
+.item:hover .priceTag{
+    opacity: 1;
+    border-style: solid;
+    border-width: 0.1vw;
+    border-color: firebrick;
+    background-color:  firebrick;
+}
+
+
+li:hover {
+    background-color: firebrick;
+}
+
+.products li img {
+    width: 28vw;
+    height: 21vw;
+}
+
+.itemDesc {
+    margin: 0.8vw;
+    font-family: Verdana, sans-serif;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+
+
+}
+
+.priceTag {
+    position: absolute;
+    font-family: Verdana, sans-serif;
+    top: 5%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+    width: 20%;
+    background-color: olive;
+    color: white;
+    font-weight: normal;
+    font-size: 40px;
+    text-align: center;
+    border-color: whitesmoke;
+    border-style: solid;
+    border-width: 0.1vw;
+    border-radius: 2vw;
+    text-decoration: line-through;
+    text-decoration-color: firebrick;
+}
+
+.sale_tag {
+    position: absolute;
+    font-family: Verdana, sans-serif;
+    top: 15%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+    width: 20%;
+    background-color: yellowgreen;
+    color: white;
+    font-weight: normal;
+    font-size: 40px;
+    text-align: center;
+    border-color: whitesmoke;
+    border-style: solid;
+    border-width: 0.1vw;
+    border-radius: 2vw;
+}
+
+.item:hover .sale_tag{
+    border-style: solid;
+    border-width: 0.1vw;
+    border-color: firebrick;
+    background-color:  firebrick;
+}
+
+.item:hover .priceTag{
+    opacity: 0.5;
+    border-style: solid;
+    border-width: 0.1vw;
+    border-color: white;
+    background-color:  olive;
+}
+
+.on_sale_tag {
+    position: absolute;
+    font-family: Verdana, sans-serif;
+    top: 5.5%;
+    left: 79%;
+    transform: translate(-50%, -50%);
+    width: 40%;
+    background-color: firebrick;
+    color: white;
+    font-weight: normal;
+    font-size: 40px;
+    text-align: center;
+    border-color: firebrick;
+    border-style: solid;
+    border-width: 0.1vw;
+    border-radius: 0.5vw;
+}

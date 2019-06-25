@@ -1,0 +1,50 @@
+body {
+    font-family: Verdana, sans-serif;
+    font-weight: bold;
+    background-color: whitesmoke;
+}
+
+.disclaimer {
+    display: block;
+    float: top;
+    text-align: center;
+    height: 10vw;
+    width: 50vw;
+    padding-left: 28vw;
+}
+
+.buttons {
+    display: block;
+    list-style-type: none;
+    padding-left: 42vw;
+
+
+}
+
+.buttons ul {
+    list-style-type: none;
+}
+
+.buttons li {
+    float: left;
+    padding: 1vw;
+    text-align: center;
+    background-color: olive;
+    margin: 1vw;
+
+}
+
+.buttons li a {
+    text-decoration: none;
+    color: white;
+}
+
+.buttons li a:hover {
+    text-decoration: none;
+    color: white;
+
+}
+
+.buttons li:hover {
+    background-color: firebrick;
+}
